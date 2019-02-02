@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sedona</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__inner">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Информация</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Фотои видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Карта штата</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="hotels.html" class="main-nav__link">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo"> <img src="" alt="Логотип сайта Седона" /> </a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="filters">
+        <div class="filters__category">
+          <h2 class="filters__title">Инфраструктура</h2>
+          <input id="pool" type="text" class="filters__item visually-hidden" />
+          <label for="pool" class="filters__label">Бассейн</label>
+          <input
+            id="parking"
+            type="text"
+            class="filters__item visually-hidden"
+          />
+          <label for="parking" class="filters__label">Парковка</label>
+          <input
+            id="wireless"
+            type="text"
+            class="filters__item visually-hidden"
+          />
+          <label for="wireless" class="filters__label">Wi-fi</label>
+        </div>
+        <div class="filters__category">
+          <h2 class="filters__title">Тип жилья</h2>
+          <input id="hotel" type="text" class="filters__item visually-hidden" />
+          <label for="hotel" class="filters__label">Гостиница</label>
+          <input id="motel" type="text" class="filters__item visually-hidden" />
+          <label for="motel" class="filters__label">Мотель</label>
+          <input
+            id="apartments"
+            type="text"
+            class="filters__item visually-hidden"
+          />
+          <label for="apartments" class="filters__label">Апартаменты</label>
+        </div>
+        <div class="filters__category">
+          <h2 class="filters__title">Стоимость в сутки (р):</h2>
+          <div class="filters__element">
+            <p class="filters__subtitle">От</p>
+            <input type="text" class="filters__value filters__value--low" />
+            <p class="filters__subtitle">До</p>
+            <input type="text" class="filters__value filters__value--high" />
+          </div>
+          <div class="filters__scale"></div>
+          <div class="filters__scale filters__scale--active"></div>
+          <button
+            class="filters__scale-button ilters__scale-button--low"
+          ></button>
+          <button
+            class="filters__scale-button ilters__scale-button--high"
+          ></button>
+          <button class="filters__button">Показать</button>
+        </div>
+      </section>
+
+      <section class="sorting">
+        <h2 class="sorting__title">Найдено:</h2>
+        <h2 class="sorting__title">3</h2>
+        <p class="sorting__description">Сортировка:</p>
+        <a href="#" class="sorting__link sorting__link--active">По цене</a>
+        <a href="#" class="sorting__link">По типу</a>
+        <a href="#" class="sorting__link">По рейтингу</a>
+        <a href="#" class="sorting__link">
+          <span class="visually-hidden">Сортировка по цене вверх</span></a
+        >
+        <a href="#" class="sorting__link sorting__link--active">
+          <span class="visually-hidden">Сортировка по цене вниз</span></a
+        >
+      </section>
+
+      <section class="results">
+        <ul class="results__list">
+          <li class="results__item">
+            <img
+              src="img/pic_amara.jpg"
+              alt="Изображение гостиницы Amarat resort & spa"
+              class="results__widget"
+              width="135"
+              height="90"
+            />
+            <h3 class="results__title">Amarat resort & spa</h3>
+            <p class="results__type">Гостиница</p>
+            <button class="button__results">Подробнее</button>
+            <button class="button__results button__results --reserv">
+              Забронировать
+            </button>
+            <img src="" alt="гостиница 4 звезды" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <p class="results__info">Рейтинг: 8.5</p>
+          </li>
+          <li class="results__item">
+            <img
+              src="img/pic_desrt.jpg"
+              alt="Изображение гостиницы Desert quail inn"
+              class="results__widget"
+              width="135"
+              height="90"
+            />
+            <h3 class="results__title">Desert quail inn</h3>
+            <p class="results__type">Мотель</p>
+            <button class="button__results">Подробнее</button>
+            <button class="button__results button__results --reserv">
+              Забронировать
+            </button>
+            <img src="" alt="мотель 3 звезды" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <p class="results__info">Рейтинг: 8.9</p>
+          </li>
+          <li class="results__item">
+            <img
+              src="img/pic_villas.jpg"
+              alt="Изображение гостиницы Villas at poco diablo"
+              class="results__widget"
+              width="135"
+              height="90"
+            />
+            <h3 class="results__title">Villas at poco diablo</h3>
+            <p class="results__type">Апартаменты</p>
+            <button class="button__results">Подробнее</button>
+            <button class="button__results button__results --reserv">
+              Забронировать
+            </button>
+            <img src="" alt="апартаменты 2 звезды" />
+            <img src="" alt="" />
+            <p class="results__info">Рейтинг: 9.2</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="instagramm">
+        <a href="#" class="instagramm__title">#Visitsedona</a>
+      </section>
+      <section class="social">
+        <a href="#" class="social__twitter">
+          <span class="visually-hidden">twitter</span></a
+        >
+        <a href="#" class="social__facebook">
+          <span class="visually-hidden">facebook</span></a
+        >
+        <a href="#" class="social__youtube">
+          <span class="visually-hidden"></span>youtube</a
+        >
+      </section>
+      <section class="site-dev">
+        <a href="#" class="site-dev__link">
+          <span class="visually-hidden">Создано HTML-academy</span></a
+        >
+      </section>
+    </footer>
+  </body>
+</html>
